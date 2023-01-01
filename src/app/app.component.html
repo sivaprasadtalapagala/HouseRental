@@ -1,0 +1,78 @@
+<div class="container-fluid">
+  <div class="col-md">
+    <app-usersignin></app-usersignin>
+  </div>
+</div>
+
+<hr>
+<div class="container-fluid">
+  <div class="col-md">
+    <app-usersignup></app-usersignup>
+  </div>
+</div>
+<hr>
+<div class="container-fluid">
+  <div class="col-md">
+    <app-ownersignup></app-ownersignup>
+  </div>
+</div>
+<hr>
+<div class="container-fluid">
+  <div class="col-md">
+    <app-ownersignin></app-ownersignin>
+  </div>
+</div>
+<hr>
+
+
+
+
+
+
+
+<div class="container-fluid">
+  <form action="/action_page.php" class="was-validated">
+    <div class="mb-3 mt-3">
+      <label for="uname" class="form-label">Username:</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="mb-3">
+      <label for="pwd" class="form-label">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="row mb-4">
+      <div class="col d-flex justify-content-center">
+        <!-- Checkbox -->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+          <label class="form-check-label" for="form2Example31"> Remember me </label>
+        </div>
+      </div>
+  
+      <div class="col">
+        <!-- Simple link -->
+        <a href="#!">Forgot password?</a>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+    <div class="text-center">
+    <p>Not a member? <a href="#!">Register</a></p>
+  </div>
+  </form>
+</div>
+
+<hr>
+<hr>
+<hr>
+<hr>
+<router-outlet></router-outlet>
+
+
+
+
+
+
