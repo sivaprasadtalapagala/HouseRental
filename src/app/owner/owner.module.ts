@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HousedetailsComponent } from './housedetails/housedetails.component';
 import { OwnersignupComponent } from './ownersignup/ownersignup.component';
 import { OwnersigninComponent } from './ownersignin/ownersignin.component';
+import { RouterModule } from '@angular/router';
+import { OwnerComponent } from './owner.component';
 
 
 
@@ -13,10 +15,12 @@ import { OwnersigninComponent } from './ownersignin/ownersignin.component';
     HousedetailsComponent,
          OwnersignupComponent,
          OwnersigninComponent,
+         OwnerComponent,
          
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     OwnersignupComponent,

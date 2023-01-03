@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { BookingComponent } from './booking/booking.component';
 import { UsersigninComponent } from './usersignin/usersignin.component';
 import { UsersignupComponent } from './usersignup/usersignup.component';
+import { RouterModule } from '@angular/router';
+import { UserComponent } from './user.component';
 
 
 
@@ -12,10 +14,12 @@ import { UsersignupComponent } from './usersignup/usersignup.component';
     
     BookingComponent,
          UsersigninComponent,
-         UsersignupComponent
+         UsersignupComponent,
+         UserComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     UsersigninComponent,
