@@ -1,0 +1,501 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* cards */
+.example-card {
+    max-width: 800px;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0px
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    /* background-color: #f1f1f1; */
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* about card start */
+.about {
+    background-color: #4c9e9e;
+    width: 100%;
+    height: 600px;
+    color: aliceblue;
+}
+
+.about_card_head1 {
+    padding: 20px;
+    font-size: 36px;
+    margin-bottom: 20px;
+
+}
+
+.about_card_head2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 28px;
+}
+
+.aboutcard1 {
+    width: auto;
+    margin: 20px;
+    background-color: transparent;
+    height: 400px;
+    font-size: 16px;
+    border-radius: 10px;
+
+}
+
+.aboutcard2 {
+    margin: 20px;
+    /* padding: 10px; */
+    border-radius: 10px;
+    height: 400px;
+    background-color: transparent;
+}
+
+/* card 1 animation */
+.anim1 {
+    position: relative;
+    animation: mymove 2s;
+    animation-fill-mode: forwards;
+}
+
+#anim1 {
+    animation-timing-function: linear;
+}
+
+@keyframes mymove {
+    from {
+        left: -300px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+/* card 2 animation */
+.anim2 {
+    position: relative;
+    animation: mymove2 2s;
+    animation-fill-mode: backwards;
+}
+
+#anim2 {
+    animation-timing-function: linear;
+}
+
+@keyframes mymove2 {
+    from {
+        right: -300px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+/* about card ends */
+
+/* program card animation */
+
+.programs {
+    background-color: #7078de;
+    width: 100%;
+    height: 600px;
+    color: aliceblue;
+
+}
+
+.programs_card_head1 {
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 28px;
+
+
+}
+
+.programs_card_head2 {
+    padding: 20px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.programscard1 {
+    margin: 20px;
+    /* padding: 10px; */
+    border-radius: 10px;
+    height: 400px;
+    background-color: transparent;
+}
+
+.programscard2 {
+    width: auto;
+    margin: 20px;
+    background-color: transparent;
+    height: 400px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.pro_anim1 {
+    position: relative;
+    animation: proanim1 2s;
+    animation-fill-mode: backwards;
+}
+
+#pro_anim1 {
+    animation-timing-function: linear;
+}
+
+@keyframes proanim1 {
+    from {
+        right: 300px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+.pro_anim2 {
+    position: relative;
+    animation: proanim2 2s;
+    animation-fill-mode: forwards;
+}
+
+#pro_anim2 {
+    animation-timing-function: linear;
+}
+
+@keyframes proanim2 {
+    from {
+        right: -300px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+
+.ourteam{
+    background-color: #4c9e9e;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+    background-color: #4c9e9e;
+
+ }
+ .card{
+    margin: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(9, 9, 86); 
+ }
+
+ /* ---------------------swipe  cards---------------------------------------- */
+
+
+ .card-body {
+    /* min-height: 300px; */
+    min-width: 300px !important;
+    margin-right: 5px;
+    text-align: center;
+  }
+
+  .cardspace {
+    padding: 20px;
+  }
+
+  .scroll-cards-section {
+    overflow-y: auto;
+  }
+
+  .custom-card-rad {
+    /* padding: 1.5em .5em .5em; */
+    border-radius: 2em !important;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  }
+
+  .custom-card-img-top {
+    border-top-right-radius: 2em !important;
+    border-top-left-radius: 2em !important;
+  }
+
+
+
+  /* below css is for contaft us form */
+
+  .form-well {
+    /* background: #fff; */
+    border-radius: 0;
+    margin-bottom: 0;
+    border: solid 1px #ccc;
+    box-shadow: 0 0 8px #000;
+    border-radius: 2em !important;
+  }
+
+  .form-well .form-well {
+    border: none;
+    box-shadow: none;
+  }
+
+  .blue-txt {
+    color: #0069a3;
+  }
+
+  .form-well legend {
+    font-size: 25px;
+    margin: 10px 0 25px;
+  }
+
+  .group {
+    position: relative;
+    margin-bottom: 35px;
+  }
+
+  input {
+    font-size: 18px;
+    padding: 5px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+/* --------------------------------------------- */
+
+  /* LABEL ======================================= */
+
+  .form-well form label {
+    color: #484848;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+
+  /* active state */
+
+  .form-well form input:focus~label,
+  .form-well form input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #025789;
+    left: 0;
+    border: none;
+  }
+
+  .form-well form textarea:focus~label,
+  .form-well form textarea:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #025789;
+    left: 0;
+  }
+
+  /* BOTTOM BARS ================================= */
+  
+  .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .bar:before,
+  .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #28739c;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+
+  .bar:before {
+    left: 50%;
+  }
+
+  .bar:after {
+    right: 50%;
+  }
+
+  /* active state */
+
+  input:focus~.bar:before,
+  input:focus~.bar:after {
+    width: 50%;
+  }
+
+  .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  input:focus~.highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+  }
+
+  .form-well form input,
+  .form-well form textarea {
+    color: #000 !important;
+    border-bottom: solid 2px #ccc;
+    width: 100%;
+    height: 45px;
+  }
+
+  .form-well form textarea {
+    height: 135px;
+    border: none;
+    border-bottom: solid 2px #ccc;
+    /* border-top: solid 2px #ccc; */
+  }
+
+  .form-well form .group label {
+    color: #484848;
+  }
+
+  .form-well input:focus,
+  .form-well form textarea:focus {
+    padding: 5px 10px;
+  }
+
+  .form-well form .btn {
+    background: #0d6efd;
+    width: 40%;
+    color: #fff !important;
+    padding: 10px;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 2em !important;
+  }
+
+  @-webkit-keyframes inputHighlighter {
+    from {
+      background: #fff;
+    }
+
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+
+  @-moz-keyframes inputHighlighter {
+    from {
+      background: #fff;
+    }
+
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+
+  @keyframes inputHighlighter {
+    from {
+      background: #fff;
+    }
+
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+
+  .form-custom-box {
+    display: block;
+    padding: 20px;
+    width: 70% !important;
+    margin: 0 auto;
+    margin-top: 15%;
+  }
+
+  .cust-form-control {
+    border: 0px solid #ced4da !important;
+  }
+/* -----------contact card------------------ */
+

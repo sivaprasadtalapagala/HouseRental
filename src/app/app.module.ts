@@ -10,13 +10,23 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
+import { HeaderComponent } from './header/header.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     PageNotFoundComponent,
-    ForgetPasswordComponent
+    ForgetPasswordComponent,
+    HeaderComponent,
+    ContactUsComponent,
+    AboutUsComponent,
+    HowItWorksComponent
   ],
   imports: [
     BrowserModule,
@@ -28,8 +38,11 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
     //importing all modules started
     AdminModule,
     OwnerModule,
-    UserModule
+    UserModule,
+    BrowserAnimationsModule,
     //modules importing ended
+    MatCardModule
+    
     
 
   ],
