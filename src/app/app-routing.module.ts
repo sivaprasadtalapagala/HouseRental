@@ -7,6 +7,7 @@ import { SignupComponent } from './admin/signup/signup.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { HousesComponent } from './houses/houses.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { HousedetailsComponent } from './owner/housedetails/housedetails.component';
 import { OwnerComponent } from './owner/owner.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path:'contact-us',component:ContactUsComponent},
   {path:'about-us',component:AboutUsComponent},
   {path:'how-it-works',component:HowItWorksComponent},
+  {path:'houses',component:HousesComponent},
   {path:'owner',component:OwnerComponent,children:[
     {path:'',component:OwnersigninComponent},
     {path:'ownersignin',component:OwnersigninComponent},
