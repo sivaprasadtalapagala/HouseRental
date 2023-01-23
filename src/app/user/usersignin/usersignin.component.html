@@ -1,65 +1,92 @@
-<form>
-    <!-- Email input -->
-    <div class="form-outline mb-4">
-      <input type="email" id="form2Example1" class="form-control" required/>
-      <label class="form-label" for="form2Example1">Email address</label>
-      <div class="valid-feedback">Valid.</div>
-      <div class="invalid-feedback">Please fill out this field.</div>
-    </div>
+<div class="container">
+  <div style="margin: 80px;">
+    <form class="my-auto">
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="email" id="form2Example1" class="form-control" required/>
+        <label class="form-label" for="form2Example1">Email address</label>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+    
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <input type="password" id="form2Example2" class="form-control" required/>
+        <label class="form-label" for="form2Example2">Password</label>
+      </div>
+    
+      <!-- 2 column grid layout for inline styling -->
+      <div class="row mb-4">
+        <div class="col d-flex justify-content-center">
+          <!-- Checkbox -->
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+            <label class="form-check-label" for="form2Example31"> Remember me </label>
+          </div>
+        </div>
+    
+        <div class="col">
+          <!-- Simple link -->
+          <!-- <a href="#!">Forgot password?</a> -->
+          <a class="btn btn-default" href="/forgetpassword">Forget password</a>
   
-    <!-- Password input -->
-    <div class="form-outline mb-4">
-      <input type="password" id="form2Example2" class="form-control" required/>
-      <label class="form-label" for="form2Example2">Password</label>
-    </div>
-  
-    <!-- 2 column grid layout for inline styling -->
-    <div class="row mb-4">
-      <div class="col d-flex justify-content-center">
-        <!-- Checkbox -->
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-          <label class="form-check-label" for="form2Example31"> Remember me </label>
         </div>
       </div>
+    
+      <!-- Submit button -->
+      <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+    
+      <!-- Register buttons -->
+      <div class="text-center">
+        <p>Not a member? <a href="/user/usersignup">Register</a></p>
+        <p>Not a user? <a href="/owner">Owner</a></p>
   
-      <div class="col">
-        <!-- Simple link -->
-        <a href="#!">Forgot password?</a>
+        <!-- <p>or sign up with:</p> -->
+        <a class="btn btn-default" href="/user/usersignup">Sign Up</a>
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+    
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-google"></i>
+        </button>
+    
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-twitter"></i>
+        </button>
+    
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-github"></i>
+        </button>
       </div>
-    </div>
+    </form>
   
-    <!-- Submit button -->
-    <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
   
-    <!-- Register buttons -->
-    <div class="text-center">
-      <p>Not a member? <a href="#!">Register</a></p>
-      <p>or sign up with:</p>
-      <button type="button" class="btn btn-link btn-floating mx-1">
-        <i class="fab fa-facebook-f"></i>
-      </button>
   
-      <button type="button" class="btn btn-link btn-floating mx-1">
-        <i class="fab fa-google"></i>
-      </button>
+    <!--
+        <form [formGroup]="form" (ngSubmit)="submit()">
+      <label>
+        Email:
+        <input type="email" formControlName="email">
+        <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
+          Email is required and must be a valid email address
+        </div>
+      </label>
+      <br>
+      <label>
+        Password:
+        <input type="password" formControlName="password">
+        <div *ngIf="form.get('password')?.invalid && form.get('password')?.touched">
+          Password is required and must be at least 8 characters long
+        </div>
+      </label>
+      <br>
+      <button [disabled]="form.invalid">Submit</button>
+    </form>
+    -->
   
-      <button type="button" class="btn btn-link btn-floating mx-1">
-        <i class="fab fa-twitter"></i>
-      </button>
   
-      <button type="button" class="btn btn-link btn-floating mx-1">
-        <i class="fab fa-github"></i>
-      </button>
-    </div>
-  </form>
-
-
   
-  <button type="button" class="btn btn-default"><a href="/user/usersignup">Sign Up</a></button>
-  <button type="button" class="btn btn-default"><a href="/forgetpassword">Forget password</a></button>
-  <button type="button" class="btn btn-default"><a href="/owner">Owner</a></button>
-
-
-
-  
+    
+  </div>
+</div>
